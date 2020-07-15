@@ -272,13 +272,19 @@ footer .copyright {
 }
 
 @media only screen and (min-width : 1024px) {
-    body {
-        width: 1200px;
+ 
+    header {
+        background-image: url("./images/bg-hero-desktop.svg");
+    }
+
+    header .header-container {
+        max-width: 1200px;
         margin: 0 auto;
     }
 
     header .jumbotron .jumbotron-content {
         padding: 0 50px 0 0;
+        
     }
 
     header .jumbotron .jumbotron-content h1 {
@@ -290,9 +296,18 @@ footer .copyright {
         margin: 50px auto;
     }
 
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 100px;
+    }
+
     main .attributes {
         flex-direction: row;
         text-align: left;
+        max-width: 1100px;
     }
 
     main .attributes img {
@@ -307,12 +322,37 @@ footer .copyright {
         padding: 0 80px;
     }
 
+    aside {
+        margin: 0 auto;
+        max-width: 700px;
+    }
+
     aside h2 {
         font-size: 30px;
     }
 
+    footer .footer-logo {
+        margin-left: 70px;
+    }
+
+    footer .footer-info {
+        flex: 1;
+        margin-right: 100px;
+    }
+
+    footer .footer-nav {
+        flex: 1;
+    }
+
+    footer .social-networks {
+        flex: 1;
+        justify-content: flex-start;
+    }
+
     footer .footer-container {
+        max-width: 1200px;
         display: flex;
+        margin: 0 auto;
     }
 
     footer .copyright {
